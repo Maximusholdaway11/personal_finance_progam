@@ -82,4 +82,4 @@ def currency_conversion_menu():
 
         return convert_currency(base_currency, base_value, currency_to_convert)
 
-print(currency_conversion_menu())
+#print(currency_conversion_menu())

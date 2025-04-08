@@ -36,7 +36,6 @@ This program is password protected, so it is opened by with a prompt asking for 
 
 ## Contributing
 ---
-
 ## Contributers
 ---
 * Darius Vaiaoga wrote the code for the login system and CSV saving and loading and wrote the README file
@@ -53,6 +52,9 @@ I am Darius Vaiaoga, a student of Ms. LaRose's Computer Programming 2 class. I h
 You can contact me at my school email: darius.vaiaoga@ucas-edu.net
 * "Insert name here" Info:  
 
+* Gabriel Crozier Info:  
+I am Gabriel Crozier, or just Gabe. I am currently in a programming 2 class and am learning Python. I love programming, but sadly I hate everything to do with how people WANT me to program. I mainly learnt the "Idea" of programming from hit game Minecraft! I loved using command blocks to get things to work. I play videogames!
+You can contact me from my schoool email: gabriel.crozier@ucas-edu.net
 * Max Holdaway Info:  
 I am a simple Computer Programming 2 Student (CS1500). I am still learning how to code but I am improving. I hope to improve even more and eventually use this in engineering.  
 My School email is: max.holdaway@ucas-edu.net

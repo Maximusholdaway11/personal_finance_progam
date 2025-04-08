@@ -12,7 +12,7 @@ def savings(incomes,expenses):
             message="What would you like to do?",
             choices=[
                 "Create New Savings Goal",
-                "Compare Savings to Goal",
+                "Compare Net Income / Expenses to Goal",
                 "Exit Savings",
             ],
             filter=lambda result: result.split()[0].lower()
@@ -26,7 +26,8 @@ def savings(incomes,expenses):
             savings_goal = inquirer.number(
                 min_allowed=0,
                 keybindings={"negative_toggle": []},
-                message=f"Input what you would like to save to {f'(Currently: ${read_savings_goal})' if read_savings_goal else ''}" # Message adds a currently if there is a current savings goal
+                message=f"Input a goal to save to {f'(Currently: ${read_savings_goal})' if read_savings_goal else ''}", # Message adds a currently if there is a current savings goal
+                instruction="Input a number Ex: 1000"
             ).execute()
 
             write_savings(savings_goal) # Writes at the end
