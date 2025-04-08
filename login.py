@@ -63,9 +63,6 @@ def login():
                 username_attempt = str(input('Username: '))
                 password_attempt = str(input('Password: '))
 
-                print(username_attempt)
-                print(password_attempt)
-
                 if [username_attempt, password_attempt] == profile:
                     print(f'Welcome {username_attempt}.')
                     return True

@@ -92,8 +92,6 @@ def expense_entries():
 #A function to find and show a specific entry based on date
 def show_income_expense_entry(income_entry_list, expense_entry_list):
     #Inner function for getting the date from the user
-    print(income_entry_list)
-    print(expense_entry_list)
     def get_entry_date():
         income_entry_date = str_input('Please type the date when you either got the money or spent it (like MM-DD-YY if any of these are single digits type 0(day (less than ten))):')
         try:

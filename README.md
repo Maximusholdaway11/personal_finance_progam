@@ -6,7 +6,7 @@ This is a personal finance program. It is used to store financial information, b
 
 ## Installation
 ---
-Does not need to be done.
+Install the required libraries listed below under used technologies. Ensure you have python correctly implemented, and don't use github codespaces. For whatever reason graphs don't function properly in them. Then, you can use a variety of methods to download and open the project in an IDE like VSCode.
 
 ## Excecution and Usage
 ---
