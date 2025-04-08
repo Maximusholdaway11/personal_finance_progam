@@ -9,7 +9,8 @@ from save_load import read_finances
 from budget import budget
 from savings import savings
 #Asks a question using InquirerPy
-def question(answers,display):
+def question(answers,display,clear_term=True):
+    if clear_term: print("\033c")
     choice = inquirer.select(
             message=display,
             choices=answers,
@@ -19,6 +20,7 @@ def question(answers,display):
 
 #Allows the user to select options of what to do in the program.
 def main():
+    print('\033c')
     print("Hello! Welcome to your personal finance program!")
     login()
 
@@ -27,6 +29,7 @@ def main():
         choices = ['1: Track expenses and income.','2: Set budget limits and compare actual spending to limits.','3: Set a savings goal and track progress towards that goal.','4: View data visualizations of income and expenses.','5: Exit']
         choice = question(choices,'This program will help you to:')
         print(choice)
+        print("\033c")
         if choice == choices[0]:
             which = question(['Expenses','Income','View'],'Would you like to input income or expenses, or view previous entries?')
             if which == 'Expenses':
@@ -36,7 +39,7 @@ def main():
             else:
                 show_income_expense_entry(read_finances()[0], read_finances()[1])
         elif choice == choices[1]:
-            budget(read_finances()[0], read_finances()[1])
+            budget(read_finances()[1])
         elif choice == choices[2]:
             savings(read_finances()[0], read_finances()[1])
         elif choice == choices[3]:
