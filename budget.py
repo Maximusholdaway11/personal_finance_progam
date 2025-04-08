@@ -68,7 +68,7 @@ def creation_selection_action(categories, budgets):
         category = inquirer.fuzzy(
             message="Choose a category to remove!",
             # Choices category is first, then it formats it for better reading based on max length, then if there is a current budget print that, else print there isn't
-            choices=[x for x in categories],
+            choices=[x for x in categories if budgets.get(x)],
         ).execute()
         return [category]
     
