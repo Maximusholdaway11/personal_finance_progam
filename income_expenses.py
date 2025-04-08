@@ -23,14 +23,14 @@ def number_float_input(message):
                 if number >= 0:
                     return number
                 else:
-                    print("Number cannot be less than zero.")
+                    print("Number cannot be less than or equal to zero.")
             else:
                 try:
                     number = float(number)
-                    if number >= 0:
+                    if number > 0:
                         return round(float(number), 2)
                     else:
-                        print("Number cannot be less than zero.")
+                        print("Number cannot be less than or equal to zero.")
                 except:
                     print("Please type in a number that is not less than zero (you can include decimals).")
 
@@ -93,6 +93,7 @@ def expense_entries():
 def show_income_expense_entry(income_entry_list, expense_entry_list):
     #Inner function for getting the date from the user
     def get_entry_date():
+        print("\033c")
         income_entry_date = str_input('Please type the date when you either got the money or spent it (like MM-DD-YY if any of these are single digits type 0(day (less than ten))):')
         try:
             income_entry_date = parser.parse(income_entry_date)

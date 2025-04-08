@@ -22,3 +22,6 @@ income,income_date,income_source,expense,expense_date,expense_category
 0,0,0,1,2024-02-10 00:00:00,House Payments
 0,0,0,900,2024-02-12 00:00:00,Bail
 0,0,0,600,2024-02-28 00:00:00,Fancy French Fries
+0,0,0,50,2001-04-25 00:00:00,Gas
+0,0,0,45,2025-04-10 00:00:00,Utilities
+0,0,0,50,2025-04-01 00:00:00,Gas

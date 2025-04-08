@@ -78,11 +78,11 @@ def creation_selection_action(categories, budgets):
 
 
 # Main budget function. Contains most ui and sets new budgets.
-def budget(incomes,expenses):
+def budget(expenses):
     budgets = rb("budgets.csv") # Gets budgets from budgets.csv
 
     while True:
-        categories = list(dict.fromkeys([x["income_source"] for x in incomes] + [x["expense_category"] for x in expenses] + [key for key in budgets])) # From budgets, incomes, and expenses gets every possible category added
+        categories = list(dict.fromkeys([x["expense_category"] for x in expenses] + [key for key in budgets])) # From budgets, incomes, and expenses gets every possible category added
         categories.sort()
         budgets = {x:budgets.get(x) for x in categories}
 
@@ -104,7 +104,7 @@ def budget(incomes,expenses):
 
                 if category:
                     if isinstance(category, list):
-                        budgets[category[0]] = None # If budgets is a list than make it a none value
+                        budgets.pop(category[0],None) # If budgets is a list than remove budget
                         continue
 
                     if not category in categories: categories.append(category)
