@@ -91,7 +91,7 @@ def budget(incomes,expenses):
             message="What would you like to do?",
             choices=[
                 "Create Budget",
-                "Compare Budgets",
+                "Compare Expenses to Budgets by Month",
                 "Exit Program"
             ],
             filter=lambda result: result.split()[0].lower(),
