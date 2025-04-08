@@ -36,10 +36,6 @@ def currency_conversion_menu():
                 case '4':
                     base_currency = 'JPY'
                     break
-                
-                case '5':
-                    print('Exitting...')
-                    break
 
         base_value = 0
 
@@ -81,7 +77,9 @@ def currency_conversion_menu():
                     break
                 
                 case '5':
-                    print('Exitting...')
-                    break
+                    print('Exiting...')
+                    return None
 
         return convert_currency(base_currency, base_value, currency_to_convert)
+
+print(currency_conversion_menu())
