@@ -40,7 +40,7 @@ This program is password protected, so it is opened by with a prompt asking for 
 ---
 * Darius Vaiaoga wrote the code for the login system and CSV saving and loading and wrote the README file
 * Nicholas Larsen wrote the code for the UI and encryption
-* Gabriel Crozier wrote the code for budgets and savings goals
+* Gabriel Crozier wrote the code for budgets and savings goals, Gabriel Crozier had 3 testers Archie, Heather, and Alex
 * Max Holdaway wrote the code for the income and expenses file, Max Holdaway had three testers his brother, and his parents
 * Timothy Larsen, assisted Nicholas in a multitude of areas, mostly encryption.
 * Aria AI was used as an assistant for Gabe to program the budget graphs.  
